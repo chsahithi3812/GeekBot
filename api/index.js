@@ -10,11 +10,14 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const cors =require("cors")
 const morgan =require("morgan")
+const path =require("path")
 dotenv.config();
 app.use(express.json());
+app.use("/images",express.static(path.join(__dirname,"/images")))
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
+    
    
 }).then(()=>{
     console.log("db connected");
