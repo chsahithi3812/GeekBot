@@ -22,8 +22,8 @@ export default function Sidebar() {
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+          Hello,Geekbots!!
+          I am Sahithi a Pre-Final year student from ABV-IITM Gwalior, 
         </p>
       </div>
       <div className="sidebarItem">

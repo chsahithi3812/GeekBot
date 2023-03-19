@@ -11,7 +11,7 @@ const multer = require("multer");
 const cors =require("cors")
 const morgan =require("morgan")
 const path =require("path")
-dotenv.config();
+dotenv.config(); 
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")))
 mongoose.connect(process.env.MONGO_URL,{
@@ -65,4 +65,4 @@ app.use("/api/categories", categoryRoute);
 
 app.listen(port,()=>{
     console.log(`server is running in ${port}`)
-})
+}) 
